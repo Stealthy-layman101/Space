@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology</title>
+    <link rel="stylesheet" href="technology.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="nav">
+        <img class="logo_img" src="Images/logo.svg" alt="Logo" width="50px" height="50px">
+        <div id="list" class="navigation">
+            <ul>
+                <li>
+                <a href="index.html">00 HOME</a>
+            </li>
+            <li>
+                <a href="destinations.html">01 DESTINATION</a>
+            </li>
+            <li>
+                <a href="crew.html">02 CREW</a>
+            </li>
+            <li>
+                <a href="technology.html">03 TECHNOLOGY</a>
+            </li>
+        </ul>
+    </div>
+    </header>
+
+    <img id="hamburger" class="hamburger_icon" src="Images/icon-hamburger.svg" alt="hamburger">
+    <div class="header_line"></div>
+    <img id="close_img" class="close_icon" src="Images/icon-close.svg" alt="icon">
+
+    <h2 class="techfirst_h2"><span class="h2_span">03 </span> SPACE LAUNCH 101</h2>
+
+    <div class="tech_row">
+    <div class="tech_divs">
+    <div id="change_tech1" class="tech_1"><p id="techno1" class="div_p">1</p></div>
+    <div id="change_tech2" class="tech_2"><p id="techno2" class="div_p">2</p></div>
+    <div id="change_tech3" class="tech_3"><p id="techno3" class="div_p">3</p></div>
+</div>
+
+<section id="launch" class="techinfo_1">
+<div class="tech_row2">
+    <div class="tech_column">
+<p data-aos="fade-right" class="tech_p1">THE TERMINOLOGY</p>
+<h1 data-aos="fade-right" class="tech_h1">LAUNCH VEHICLE</h1>
+<p data-aos="fade-right" class="tech_p2">A launch vehice or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+</div>
+<img class="launchvehicle_landscape" src="Images/image-launch-vehicle-landscape.jpg" alt="landscape" width="415px" height="200px">
+<img data-aos="fade-left" class="tech_img" src="Images/image-launch-vehicle-portrait.jpg" alt="launch vehicle" width="500px" height="500px">
+</div>
+</section>
+
+<section id="capsule" class="techinfo_2">
+<div class="tech_row2">
+    <div class="tech_column">
+<p class="tech_p1">THE TERMINOLOGY</p>
+<h1 class="tech_h1 capsule_h1">SPACE CAPSULE</h1>
+<p class="tech_p2">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
+</div>
+<img class="spacecapsule_landscape" src="Images/image-space-capsule-landscape.jpg" alt="landscape" width="415px" height="200px">
+<img class="tech_img" src="Images/image-space-capsule-portrait.jpg" alt="launch vehicle" width="500px" height="500px">
+</div>
+</section>
+
+<section id="spaceport" class="techinfo_3">
+<div class="tech_row2">
+    <div class="tech_column">
+<p class="tech_p1">THE TERMINOLOGY</p>
+<h1 class="tech_h1 spaceport_h1">SPACEPORT</h1>
+<p class="tech_p2">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth's rotation for launch.</p>
+</div>
+<img class="spaceport_landscape" src="Images/image-spaceport-landscape.jpg" alt="landscape" width="415px" height="200px">
+<img class="tech_img" src="Images/image-spaceport-portrait.jpg" alt="launch vehicle" width="500px" height="500px">
+</div>
+</section>
+</body>
+</html>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration:1500,
+    })
+</script>
+<script>
+    document.getElementById('change_tech1').addEventListener('click', function(){
+        document.getElementById('launch').style.display = "block";
+        document.getElementById('capsule').style.display = "none";
+        document.getElementById('spaceport').style.display = "none";
+    });
+
+    document.getElementById('change_tech2').addEventListener('click', function(){
+        document.getElementById('launch').style.display = "none";
+        document.getElementById('capsule').style.display = "block";
+        document.getElementById('spaceport').style.display = "none";
+    });
+
+    document.getElementById('change_tech3').addEventListener('click', function(){
+        document.getElementById('launch').style.display = "none";
+        document.getElementById('capsule').style.display = "none";
+        document.getElementById('spaceport').style.display = "block";
+    });
+
+    document.getElementById('change_tech1').addEventListener('mouseover', function(){
+        document.getElementById('techno1').style.color = "grey";
+    });
+
+    document.getElementById('change_tech1').addEventListener('mouseout', function(){
+        document.getElementById('techno1').style.color = "white";
+    });
+
+    document.getElementById('change_tech2').addEventListener('mouseover', function(){
+        document.getElementById('techno2').style.color = "grey";
+    });
+
+    document.getElementById('change_tech2').addEventListener('mouseout', function(){
+        document.getElementById('techno2').style.color = "white";
+    });
+
+    document.getElementById('change_tech3').addEventListener('mouseover', function(){
+        document.getElementById('techno3').style.color = "grey";
+    });
+
+    document.getElementById('change_tech3').addEventListener('mouseout', function(){
+        document.getElementById('techno3').style.color = "white";
+    });
+
+    var dropdown = document.getElementById('hamburger');
+    dropdown.addEventListener('click', function(){
+        document.getElementById('list').style.display = "block";
+        document.getElementById('close_img').style.display = "block";
+        document.getElementById('hamburger').style.display = "none";
+    })
+
+    document.getElementById('close_img').addEventListener('click', function(){
+        document.getElementById('list').style.display = "none";
+        document.getElementById('hamburger').style.display = "block";
+        document.getElementById('close_img').style.display = "none";
+    })
+</script>

@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: url(Images/background-destination-desktop.jpg) no-repeat center fixed;
+    background-size: cover;
+    margin: 1rem;
+}
+ 
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+} 
+
+ul{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; 
+    gap: 1rem;
+    padding: 2rem 12rem 2rem 8rem;
+    margin-right: -3rem;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+
+.hamburger_icon,.close_icon{
+    display: none;
+}
+
+.logo_img{
+    margin-top: 1rem;
+    z-index: -1;
+}
+
+.header_line{
+    position: absolute;
+    background-color: grey;
+    width: 580px;
+    height: 1px;
+    margin-top: -4.5rem;
+    margin-left: 11rem;
+    z-index: 1;
+}
+
+.dest_list{
+ /*    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;  
+    gap: 1rem; */
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 2rem 2rem 2rem;
+/*     -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);  */
+    gap: 2rem;
+    position: absolute;
+    margin-left: 770px;
+    margin-top: 3rem;
+}
+
+.list_planet{
+    margin-left: -1rem;
+}
+
+.list_planet:hover{
+    text-decoration: underline;
+}
+
+a{
+    font-family: "Nunito", sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.one{
+    color: grey;
+}
+
+.destination_content{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-left: 8rem;
+}
+
+.destination_pick{
+    color: whitesmoke;
+    margin-left: -1rem;
+    margin-top: -2rem;
+}
+
+.planets_img{
+    display: flex;
+    flex-direction: column; 
+    gap: 5rem;
+    margin: 4rem; 
+}
+
+.moon_img{
+    margin-top: -2rem;
+}
+
+.planets_p1{
+    color: grey;
+}
+
+.planets_h1{
+    color: whitesmoke;
+    font-size: 4rem;
+}
+
+.destinfo_1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12rem;
+    gap: 2rem;
+    width: 37%;
+}
+
+.travel_details{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 2rem;
+    margin-left: 0.3rem;
+    border-top: 1px solid white;
+}
+
+.planets_p2, .planets_p3{
+color: grey;
+}
+
+.planets_p2{
+    margin-left: -2.1rem;
+}
+
+.planetfirst_h2, .planetsecond_h2{
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+.planetfirst_h2{
+    margin-left: -2.1rem;
+}
+
+.mars_page, .europa_page, .titan_page{
+    display: none;
+}
+
+@media screen and (max-width: 415px) {
+    body{
+        background-image: url(Images/background-destination-mobile.jpg);
+        background-size: cover;
+    }
+
+    .logo_img, .navigation, .header_line, .planets_p1{
+        display: none;
+    }
+
+    ul{
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: -1.1rem;
+        margin-right: -12rem;
+        position: absolute;
+        padding: 2rem 12rem 2rem 3rem;
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+    }
+
+    .hamburger_icon{
+        display: block;
+        margin-top: -3rem;
+        margin-left: 20.7rem;
+    }
+
+    .close_icon{
+        display: none;
+        margin-top: -1.2rem;
+        margin-left: 19.2rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .moon_pic{
+        width: 350px;
+        height: 350px;
+        margin-left: -12rem;
+        margin-top: -4rem;
+    }
+
+    .mobile_pic{
+        width: 350px;
+        height: 350px;
+        margin-left: -12rem;
+        margin-top: -4rem;
+    }
+
+    .header_line2{
+        background-color: grey;
+        width: 394px;
+        height: 1px;
+        margin-left: -28.8rem;
+        margin-top: -1rem;
+    }
+
+    .destination_pick{
+        font-size: 1.2rem;
+        margin-left: -11rem;
+        width: max-content;
+        letter-spacing: 0.1rem;  
+    }
+
+    .dest_list{
+        margin-left: 0.8rem;
+        margin-top: 26rem;
+    }
+
+    .destinfo_1{
+        margin-top: 25rem;
+    }
+
+    .planets_h1{
+        font-size: 2rem;
+        margin-left: -20rem;
+        margin-top: 6rem;
+    }
+
+    .travel_details{
+        flex-direction: column;
+        margin-left: -24rem;
+        margin-top: -3rem;
+        border-top: 0px;
+    }
+
+    .planets_p1{
+        display: block;
+        margin-left: -28.3rem;
+        margin-top: -1.5rem;
+        width: 375px;
+        text-align: center;
+    }
+
+    .planets_p2{
+        font-size: 0.9rem;
+        margin-left: 1.9rem;
+    }
+
+    .planets_p3{
+        font-size: 0.9rem;
+        margin-left: 1.2rem;
+    }
+
+    .planetfirst_h2{
+        margin-left: 1rem;
+    }
+
+    .planetsecond_h2{
+        margin-left: 2.7rem;
+    }
+
+    .moon_travel{
+        margin-top: -3rem;
+    }
+
+    .mars_line, .europa_line{
+        margin-top: -1rem;
+    }
+
+    .mars1_h2{
+        margin-left: 0.7rem;
+    }
+
+    .mars_h2{
+        margin-left: 1.1rem;
+    }
+
+    .mars_p{
+        margin-left: -28.2rem;
+    }
+
+    .mars_p2{
+        margin-left: 1.7rem;
+    }
+
+    .mars_travel{
+        margin-top: -3rem;
+    }
+
+    .europa_travel{
+        margin-top: -3rem;
+    }
+
+    .titan_img{
+        margin-top: -9.8rem;
+    }
+
+    .titan1_h2{
+        margin-left: 1.7rem;
+    }
+
+    .titan_travel{
+        margin-top: -3rem;
+    }
+
+    .titan_line{
+        margin-top: -1rem;
+    }
+}

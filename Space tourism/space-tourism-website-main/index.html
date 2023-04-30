@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="nav">
+        <img class="logo_img" src="Images/logo.svg" alt="Logo" width="50px" height="50px">
+        <div id="list" class="navigation">
+            <ul>
+                <li>
+                <a href="index.html">00 HOME</a>
+            </li>
+            <li>
+                <a href="destinations.html">01 DESTINATION</a>
+            </li>
+            <li>
+                <a href="crew.html">02 CREW</a>
+            </li>
+            <li>
+                <a href="technology.html">03 TECHNOLOGY</a>
+            </li>
+        </ul>
+    </div>
+    </header>
+
+    <img id="hamburger" class="hamburger_icon" src="Images/icon-hamburger.svg" alt="Hamburger_icon">
+    <img id="close_img" class="close_icon" src="Images/icon-close.svg" alt="Close_icon">
+    <div class="header_line"></div>
+
+    <div class="home_body">
+    <div class="home_text">
+    <h2 class="home_h2">SO, YOU WANT TO TRAVEL TO</h2>
+    <h1 class="home_h1">SPACE</h1>
+    <p class="home_p">Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!</p>
+</div>
+<div class="explore"> <p class="explore_p"> EXPLORE </p></div>
+</div>
+</body>
+</html>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration:1500,
+    })
+</script>
+<script>
+    var dropdown = document.getElementById('hamburger');
+    dropdown.addEventListener('click', function(){
+        document.getElementById('list').style.display = "block";
+        document.getElementById('close_img').style.display = "block";
+        document.getElementById('hamburger').style.display = "none";
+    })
+
+    document.getElementById('close_img').addEventListener('click', function(){
+        document.getElementById('list').style.display = "none";
+        document.getElementById('hamburger').style.display = "block";
+        document.getElementById('close_img').style.display = "none";
+    })
+</script>

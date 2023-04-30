@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: url(Images/background-crew-desktop.jpg) no-repeat center fixed;
+    background-size: cover;
+    margin: 1rem;
+}
+ 
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+} 
+
+ul{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; 
+    gap: 1rem;
+    padding: 2rem 12rem 2rem 8rem;
+    margin-right: -3rem;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+
+.logo_img{
+    margin-top: 1rem;
+    z-index: -1;
+}
+
+.header_line{
+    position: absolute;
+    background-color: grey;
+    width: 580px;
+    height: 1px;
+    margin-top: -4.5rem;
+    margin-left: 11rem;
+    z-index: 1;
+}
+
+.hamburger_icon, .close_icon{
+    display: none;
+}
+
+a{
+    font-family: "Nunito", sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.crew_row{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.crew_column{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+    margin-left: 10rem;
+    margin-top: 4rem;
+}
+
+.crewfirst_h1{
+    font-size: 2rem;
+}
+
+.crewsecond_h1{
+    color: whitesmoke;
+    font-size: 3rem;
+}
+
+.crew_h2{
+    display: flex;
+    color: whitesmoke;
+    gap: 1rem;
+    margin-bottom: 6rem;
+}
+
+.crew_img{
+    /* margin-left: 2rem; */
+    margin-right: 7rem;
+    margin-top: 1rem;
+}
+
+.crew_p{
+    width: 70%;
+}
+
+.page_num, .crewfirst_h1, .crew_p{
+    color: grey;
+}
+
+.change_crew{
+    width: 12px;
+    height: 12px;
+    background-color: rgb(150, 145, 145);
+    border-radius: 12px;
+}
+
+.change_crew:hover{
+    background-color: whitesmoke;
+}
+
+.changecrew_row{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position: absolute;
+    margin-top: 32rem;
+    margin-left: 10rem;
+}
+
+.crew_details2, .crew_details3, .crew_details4{
+    display: none;
+}
+
+@media screen and (max-width:415px) {
+    body{
+        background-image: url(Images/background-crew-mobile.jpg);
+        background-size: cover;
+    }
+
+    .logo_img, .navigation, .header_line, .planets_p1{
+        display: none;
+    }
+
+    ul{
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: -1.1rem;
+        margin-right: -12rem;
+        position: absolute;
+        padding: 2rem 12rem 2rem 3rem;
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+        z-index: 1;
+    }
+
+    .hamburger_icon{
+        display: block;
+        margin-top: -3rem;
+        margin-left: 20.7rem;
+    }
+
+    .close_icon{
+        display: none;
+        margin-top: -1.2rem;
+        margin-left: 19.2rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .crew_h2{
+        display: none;
+    }
+
+    .mobile_img{
+        width: 300px;
+        height: 300px;
+        margin-left: -18.6rem;
+        margin-top: 6rem;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    .douglas_img{
+        width: 300px;
+        height: 350px;
+        margin-left: -16.4rem;
+        margin-top: 3rem;
+    }
+
+    .changecrew_row{
+        margin-top: 27rem;
+        margin-left: 8rem;
+    }
+
+    .crewfirst_h1{
+        font-size: 1rem;
+        margin-top: 25rem;
+        margin-left: -3.5rem;
+    }
+ 
+    .crewsecond_h1{
+        display: flex;
+        font-size: 1.5rem;
+        margin-left: -6.4rem; 
+        white-space: nowrap;  /* prevent text from wrapping */
+        margin-top: -1rem;
+    }
+
+    .douglasfirst_h1{
+        margin-left: -2.5rem;
+    }
+
+    .douglassecond_h1{
+        margin-left: -9rem;
+    }
+
+    .mark_img{
+        width: 300px;
+        height: 350px;
+        margin-left: -17.2rem;
+        margin-top: 3rem;
+    }
+
+    .markfirst_h1{
+        margin-left: -3.8rem;
+    }
+
+    .marksecond_h1{
+        margin-left: -7.2rem;
+    }
+
+    .victor_img{
+        margin-left: -17.6rem;
+    }
+
+    .victorsecond_h1{
+        margin-left: -5rem;
+    }
+
+    .victorfirst_h1{
+        margin-left: -0.5rem;
+    }
+
+    .crew_p{
+        display: flex;
+        width: 375px;
+        text-align: center;
+        margin-left: -10.9rem;
+        margin-top: -1rem;
+    }    
+}
